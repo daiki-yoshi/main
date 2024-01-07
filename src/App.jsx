@@ -7,13 +7,13 @@ export default function App() {
     return (
       <div>
         <BrowserRouter>
-          <header class="header">
-            <h1 class="title"> site-name </h1>
+          <header>
+            <h1 class="title"> 海外サッカー情報局 </h1>
             <nav class="header-nav-container">
               <ul class="header-nav">
-                <li class="nav-item"><Link class="nav-link" to="/">Home</Link></li>
-                <li class="nav-item"><Link class="nav-link" to="/schedule">schedule</Link></li>
-                <li class="nav-item"><Link class="nav-link" to="/leadgeTable">leadgeTable</Link> </li>
+                <li class="nav-item"><Link to="/">Home</Link></li>
+                <li class="nav-item"><Link to="/schedule">Schedule</Link></li>
+                <li class="nav-item"><Link to="/leadgeTable">LeagueTable</Link> </li>
               </ul>
             </nav>
           </header>

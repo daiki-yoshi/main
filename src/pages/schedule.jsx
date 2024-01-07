@@ -49,7 +49,6 @@ export default function Main() {
         onChange={async (event) => {
           const newLeague = event.target.value;
           setLeague(newLeague);
-          setMatchday("1");
         }}>
         <input type="radio" name="league" value="PL" defaultChecked/> Premier League
         <input type="radio" name="league" value="PD" /> La Liga
@@ -64,7 +63,7 @@ export default function Main() {
           setMatchday(newMatchday);
         }}>
         {[...Array(leagueMacthdays[league])].map((_, index) => (
-          <option key={index} value={index+1}>{index+1}</option>
+          <option key={index} value={index+1}>Matchweek {index+1}</option>
         ))}
       </select>
 
