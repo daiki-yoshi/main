@@ -49,6 +49,7 @@ export default function Main() {
         onChange={async (event) => {
           const newLeague = event.target.value;
           setLeague(newLeague);
+          setMatchday("1");
         }}>
         <input type="radio" name="league" value="PL" defaultChecked/> Premier League
         <input type="radio" name="league" value="PD" /> La Liga
